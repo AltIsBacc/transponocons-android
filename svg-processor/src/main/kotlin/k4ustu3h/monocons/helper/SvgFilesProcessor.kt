@@ -87,7 +87,7 @@ object SvgFilesProcessor {
             val fileOutputStream = FileOutputStream(targetFile)
             Svg2Vector.parseSvgToXml(svgSource, fileOutputStream)
             val fg = "@color/primaryForeground"
-            val bg = "#33808080"
+            val bg = "@color/iconBackground"
             try {
                 updateXmlPath(targetFile, "android:strokeColor", fg)
                 updateXmlPath(targetFile, "android:fillColor", fg)

@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primaryBackground">@color/white</color>
     <color name="primaryForeground">@color/black</color>
+    <color name="iconBackground">#33808080</color>
 </resources>
