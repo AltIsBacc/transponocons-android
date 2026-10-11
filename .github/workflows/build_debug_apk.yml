@@ -119,7 +119,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Export APK_NAME
-        run: echo "APK_NAME=Monocons.Nightly.$(echo ${{ github.sha }} | cut -c1-7).apk" >> $GITHUB_ENV
+        run: echo "APK_NAME=Transponocons.Nightly.$(echo ${{ github.sha }} | cut -c1-7).apk" >> $GITHUB_ENV
       - name: Rename .apk file
         run: mv artifacts/debug-apk/*.apk $APK_NAME
       - name: Generate release notes
@@ -134,5 +134,5 @@ jobs:
           gh release view "nightly" && gh release delete "nightly" -y --cleanup-tag
           gh release create "nightly" "$APK_NAME" \
             -p \
-            -t "Monocons Nightly" \
+            -t "Transponocons Nightly" \
             --notes-file release_notes.md

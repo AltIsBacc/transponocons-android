@@ -27,7 +27,7 @@ android {
     namespace = "k4ustu3h.monocons"
 
     defaultConfig {
-        applicationId = "k4ustu3h.monocons"
+        applicationId = "altisbacc.transponocons"
         minSdk = 26
         targetSdk = compileSdk
         versionCode = 10
@@ -72,11 +72,11 @@ android {
     productFlavors {
         create("app") {
             dimension = "product"
-            resValue("string", "apps_name", "Monocons")
+            resValue("string", "apps_name", "Transponocons")
         }
         create("izzy") {
             dimension = "product"
-            resValue("string", "apps_name", "Monocons")
+            resValue("string", "apps_name", "Transponocons")
             applicationIdSuffix = ".izzy"
             versionName = version
         }
